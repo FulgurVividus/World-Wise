@@ -1,0 +1,16 @@
+1. To configure ESLint in React application:
+npm install eslint vite-plugin-eslint eslint-config-react-app --save-dev
+
+Then config the project to integrate with these packages:
+create a file .eslintrc.json
+
+In the .eslintrc.json file, we can configure the behavior of ESLint:
+{
+  "extends": "react-app"
+}
+
+After that, we also gotta our vite project with this ESLint, add these to vite.config.js:
+import eslint from "vite-plugin-eslint";
+export default defineConfig({
+  plugins: [react(), eslint()],
+});
