@@ -1,4 +1,4 @@
-1. To configure ESLint in React application:
+#1. To configure ESLint in React application:
 npm install eslint vite-plugin-eslint eslint-config-react-app --save-dev
 
 Then config the project to integrate with these packages:
@@ -14,3 +14,37 @@ import eslint from "vite-plugin-eslint";
 export default defineConfig({
   plugins: [react(), eslint()],
 });
+
+#2. 'Pages' folder is for structural components
+
+#3. React Router:
+In this project: npm i react-router-dom@6
+Actual: npm i react-router
+
+#4. In <Route path="*" element={...} /> (in App.jsx):
+'*' - this will catch all the routes that were not matched to other routes
+
+#5. In <Route path="/" element={...} /> (in App.jsx):
+'*' - root path (homepage)
+
+#6. <Link to="">...</Link> instead of <a>...</a>:
+In order not to reload the whole page but instead just update the DOM, you must use 
+<Link to="/endpoint">...</ Link>
+
+#7. NavLink (in PageNav.jsx):
+Currently visiting link gets 'active' class and additionally does the same as Link
+
+#8. CSS Modules:
+It comes out of Vite and npx, so nothing needed to install 
+Create one external CSS file per component
+Example: PageNav.jsx => PageNav.module.css
+Note: don't use element selectors
+
+#9. To make a class from componentName.module.css global:
+In this module.css files itself do this syntax
+:global(.class) {
+  some styles...
+}
+
+#10. CSS Modules class names:
+Define their names in camel case
