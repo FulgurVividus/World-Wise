@@ -79,8 +79,16 @@ Example:
 this path is linked to this component
 <Route path="cities/:whatever_name_we_give_to_parameter" element={<Component />} />
 
-useParams - to get the data from the URL, use this hook. It returns object, so store it in a variable and destructure it.
+useParams() - to get the data from the URL, use this hook. It returns object, so store it in a variable and destructure it.
 
 #14. Reading and Setting a Query String:
-useSearchParams - to read data from 'query string' of the URL. It's similar to useState, returns the array [current_state, updater_function] => [searchParams, setSearchParams]
+useSearchParams - to read data from 'query string' of the URL. It's similar to useState, returns the array [current_state, updater_function] => [searchParams, setSearchParams].
 Example of how to use is in Map.jsx file.
+
+#15. Programmatic Navigation with useNavigate
+Programmatic Navigation - means to move to a new URL without the user having to click on any link.
+The most use case is after submitting a form.
+
+useNavigate() - this custom hook returns a function 'navigate'.
+Example in Map.jsx file.
+Example in Form.jsx, -1 means go back to one step in browser history 
