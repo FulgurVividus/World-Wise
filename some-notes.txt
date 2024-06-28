@@ -63,3 +63,8 @@ index - it's a default route, if none of the routes match, it'll go to the defau
 
 <Outlet /> - similar to {children} whenever we pass some element inside another element in JSX
 But here instead of elements, we pass Route
+
+#12. Fake API:
+npm i json-server
+Then add this to 'scripts': "server": "json-server --watch folder_where_data/file_name.json --port 9000"
+Then write command - npm run server
