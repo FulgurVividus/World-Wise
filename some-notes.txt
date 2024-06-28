@@ -68,3 +68,15 @@ But here instead of elements, we pass Route
 npm i json-server
 Then add this to 'scripts': "server": "json-server --watch folder_where_data/file_name.json --port 9000"
 Then write command - npm run server
+
+#13. To use params in React Router:
+We do it in 3 steps 
+-> 1. we create a new route
+-> 2. we link to that route
+-> 3. in that route, we read the state from the URL
+
+Example: 
+this path is linked to this component
+<Route path="cities/:whatever_name_we_give_to_parameter" element={<Component />} />
+
+useParams - to get the data from the URL, use this hook. It returns something, so store it in a variable and destructure it
