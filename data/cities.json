@@ -35,6 +35,30 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "cityName": "Kyoto",
+      "country": "Japan",
+      "emoji": "🇯🇵",
+      "date": "2023-04-10T12:00:00.000Z",
+      "notes": "Historic temples and gardens",
+      "position": {
+        "lat": 35.0116,
+        "lng": 135.7681
+      },
+      "id": 345678
+    },
+    {
+      "cityName": "Reykjavik",
+      "country": "Iceland",
+      "emoji": "🇮🇸",
+      "date": "2023-07-05T10:00:00.000Z",
+      "notes": "Northern Lights and geothermal spas",
+      "position": {
+        "lat": 64.1355,
+        "lng": -21.8954
+      },
+      "id": 567890
     }
   ]
 }
