@@ -22,7 +22,7 @@ In this project: npm i react-router-dom@6
 Actual: npm i react-router
 
 #4. In <Route path="*" element={...} /> (in App.jsx):
-'*' - this will catch all the routes that were not matched to other routes
+'*' - this will catch all the routes that were not matched to other routes.
 
 #5. In <Route path="/" element={...} /> (in App.jsx):
 '*' - root path (homepage)
@@ -32,7 +32,7 @@ In order not to reload the whole page but instead just update the DOM, you must 
 <Link to="/endpoint">...</ Link>
 
 #7. <NavLink to=''>...</NavLink> (example - in PageNav.jsx):
-Currently visiting link gets 'active' class and additionally does the same as Link
+Currently visiting link gets 'active' class and additionally does the same as Link.
 
 #8. CSS Modules:
 It comes out of Vite and npx, so nothing needed to install 
@@ -57,19 +57,19 @@ Define their names in camel case
   <Route path="form" element={...} />
 </Route>
 
-here the 'app' is the parent route and others are child routes
+here the 'app' is the parent route and others are child routes.
 
-index - it's a default route, if none of the routes match, it'll go to the default one
+index - it's a default route, if none of the routes match, it'll go to the default one.
 
 <Outlet /> - similar to {children} whenever we pass some element inside another element in JSX
-But here instead of elements, we pass Route
+But here instead of elements, we pass Route.
 
 #12. Fake API:
 npm i json-server
 Then add this to 'scripts': "server": "json-server --watch folder_where_data/file_name.json --port 9000"
 Then write command - npm run server
 
-#13. To use params in React Router:
+#13. Dynamic routes with URL parameters:
 We do it in 3 steps 
 -> 1. we create a new route
 -> 2. we link to that route
@@ -79,4 +79,8 @@ Example:
 this path is linked to this component
 <Route path="cities/:whatever_name_we_give_to_parameter" element={<Component />} />
 
-useParams - to get the data from the URL, use this hook. It returns something, so store it in a variable and destructure it
+useParams - to get the data from the URL, use this hook. It returns object, so store it in a variable and destructure it.
+
+#14. Reading and Setting a Query String:
+useSearchParams - to read data from 'query string' of the URL. It's similar to useState, returns the array [current_state, updater_function] => [searchParams, setSearchParams]
+Example of how to use is in Map.jsx file.
