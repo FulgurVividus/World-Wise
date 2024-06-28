@@ -27,11 +27,11 @@ Actual: npm i react-router
 #5. In <Route path="/" element={...} /> (in App.jsx):
 '*' - root path (homepage)
 
-#6. <Link to="">...</Link> instead of <a>...</a>:
+#6. <Link to="/">...</Link> instead of <a>...</a>:
 In order not to reload the whole page but instead just update the DOM, you must use 
 <Link to="/endpoint">...</ Link>
 
-#7. NavLink (in PageNav.jsx):
+#7. <NavLink to=''>...</NavLink> (example - in PageNav.jsx):
 Currently visiting link gets 'active' class and additionally does the same as Link
 
 #8. CSS Modules:
@@ -48,3 +48,18 @@ In this module.css files itself do this syntax
 
 #10. CSS Modules class names:
 Define their names in camel case
+
+#11. Nested Routing:
+<Route path="app" element={...}>
+  <Route index element={...} />
+  <Route path="cities" element={...} />
+  <Route path="countries" element={...} />
+  <Route path="form" element={...} />
+</Route>
+
+here the 'app' is the parent route and others are child routes
+
+index - it's a default route, if none of the routes match, it'll go to the default one
+
+<Outlet /> - similar to {children} whenever we pass some element inside another element in JSX
+But here instead of elements, we pass Route
