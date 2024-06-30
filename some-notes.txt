@@ -101,3 +101,6 @@ The most use case is inside of nested routes
 replace - makes able to go back
 
 Example in App.jsx
+
+#17. Creating Cities Context:
+Example: contexts folder -> CitiesContext.jsx
