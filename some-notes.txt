@@ -79,7 +79,7 @@ Example:
 this path is linked to this component
 <Route path="cities/:whatever_name_we_give_to_parameter" element={<Component />} />
 
-useParams() - to get the data from the URL, use this hook. It returns object, so store it in a variable and destructure it.
+useParams() - to get the data from the URL, use this hook. It returns object, so store it in a variable and destructure it. Example: City.jsx file. 
 
 #14. Reading and Setting a Query String:
 useSearchParams - to read data from 'query string' of the URL. It's similar to useState, returns the array [current_state, updater_function] => [searchParams, setSearchParams].
@@ -91,7 +91,7 @@ The most use case is after submitting a form.
 
 useNavigate() - this custom hook returns a function 'navigate'.
 Example in Map.jsx file.
-Example in Form.jsx, -1 means go back to one step in browser history 
+Example in BackButton.jsx, -1 means go back to one step in browser history 
 
 #16. Programmatic navigation with <Navigate replace to="..." /> (declarative way):
 Not used so much.
@@ -105,4 +105,6 @@ Example in App.jsx
 #17. Creating Cities Context:
 Example: contexts folder -> CitiesContext.jsx
 
-#18. Consuming the CitiesContext implementation is in CountryList.jsx and CityList.jsx files
+#18. Consuming the CitiesContext implementation is in CountryList.jsx and CityList.jsx files.
+
+#19. Example of multiple classes of CSS Modules in the className is in CityItem.jsx file.
