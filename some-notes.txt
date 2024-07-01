@@ -104,3 +104,5 @@ Example in App.jsx
 
 #17. Creating Cities Context:
 Example: contexts folder -> CitiesContext.jsx
+
+#18. Consuming the CitiesContext implementation is in CountryList.jsx and CityList.jsx files
