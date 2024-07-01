@@ -108,3 +108,6 @@ Example: contexts folder -> CitiesContext.jsx
 #18. Consuming the CitiesContext implementation is in CountryList.jsx and CityList.jsx files.
 
 #19. Example of multiple classes of CSS Modules in the className is in CityItem.jsx file.
+
+#20. Installed -> npm i react-leaflet leaflet 
+NOTE: don't forget to import '@import' css according to documentation. Look in the index.css file
