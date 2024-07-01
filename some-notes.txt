@@ -111,3 +111,13 @@ Example: contexts folder -> CitiesContext.jsx
 
 #20. Installed -> npm i react-leaflet leaflet 
 NOTE: don't forget to import '@import' css according to documentation. Look in the index.css file
+
+#21. useMap (provided by leaflet library):
+Hook - to get current instance of the map that is currently being displayed 
+Example: Map.jsx file
+
+#22. useMapEvents()
+Yet another custom hook from leaflet library
+
+#23. hooks folder
+Custom hook should not necessarily be with .jsx extension if it doesn't have JSX in it.
