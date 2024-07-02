@@ -133,3 +133,6 @@ Example: createCity() function in CitiesContext.jsx.
 
 #27. Advanced State Management:
 Context + useReducer -> CitiesContext.jsx file in contexts folder.
+
+#28. Fake User:
+In FakeAuthContext.jsx, never have 'fake user' in real-world and personal applications.
