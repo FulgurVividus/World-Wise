@@ -116,8 +116,17 @@ NOTE: don't forget to import '@import' css according to documentation. Look in t
 Hook - to get current instance of the map that is currently being displayed 
 Example: Map.jsx file
 
-#22. useMapEvents()
+#22. useMapEvents():
 Yet another custom hook from leaflet library
 
-#23. hooks folder
+#23. hooks folder:
 Custom hook should not necessarily be with .jsx extension if it doesn't have JSX in it.
+
+#24. npm i react-datepicker:
+Example: in Form.jsx file the <DatePicker /> component.
+
+#25. newCity variable in Form.jsx file:
+No need to include id in the new object as json server of fake API will automatically do it itself.
+
+#26. POST request to fake API:
+Example: createCity() function in CitiesContext.jsx.
