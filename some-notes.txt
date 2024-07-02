@@ -136,3 +136,9 @@ Context + useReducer -> CitiesContext.jsx file in contexts folder.
 
 #28. Fake User:
 In FakeAuthContext.jsx, never have 'fake user' in real-world and personal applications.
+
+#29. ProtectedRoute.jsx
+File to protect the application from unauthorized users.
+
+#30. <ProtectedRoute>...</ProtectedRoute>
+It must wrap AppLayout in App.jsx file, as AppLayout is the entire application.
