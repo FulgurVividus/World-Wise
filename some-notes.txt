@@ -142,3 +142,19 @@ File to protect the application from unauthorized users.
 
 #30. <ProtectedRoute>...</ProtectedRoute>
 It must wrap AppLayout in App.jsx file, as AppLayout is the entire application.
+
+#31. Code splitting technique for Optimizing Bundle Size
+In a nutshell, the whole JS file will be divided into some parts on the server side and be downloaded by user on the client side whenever he/she needs this exact part ('lazy loading').
+
+The most common way of splitting bundle is to split it at the route level (in other words: at the page level). Take all components that represent the page and load each of them separately. 
+
+This technique has nothing to do with React Router.
+
+Example of implementation: App.jsx file
+lazy() - is built-in feature in React.
+Vite or Webpack, they will automatically split the bundle when they see this lazy() function.
+
+<Suspense fallback={}>...</Suspense> - it's a feature that is part of modern React. That allows certain components to wait for something to happen. In the example, that lazy components will be suspended while they are being loaded. 
+
+#32. npm run build
+It will create JS bundle. You can this bundle and deploy it in the web server.
